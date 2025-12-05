@@ -1,0 +1,95 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    padding-bottom: 60px; /* Espacio para el nav */
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Cursive', sans-serif; /* Simula la fuente de IG */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilos del Post */
+.post {
+    background: white;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-actions {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.post-actions i {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.post-caption {
+    padding: 0 10px 10px;
+}
+
+/* Navegación Inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+/* Modal de Subida */
+.hidden { display: none; }
+#upload-modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+#preview-img { width: 100%; max-height: 300px; object-fit: cover; margin-bottom: 10px;}
+#caption-input { width: 90%; padding: 10px; margin-bottom: 10px;}
+button { padding: 10px 20px; cursor: pointer; }
+#btn-publish { background: #0095f6; color: white; border: none; }
